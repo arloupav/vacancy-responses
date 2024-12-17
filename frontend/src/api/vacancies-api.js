@@ -1,6 +1,6 @@
 export const vacanciesAPI = {
     // baseURL: 'http://localhost:5000/api/vacancies',
-    baseURL: 'vr-backand-production.up.railway.app/api/vacancies',
+    baseURL: 'https://vr-backand-production.up.railway.app/api/vacancies',
 
     async getVacancies(currentPage, currentCount, searchQuery) {
         const url = `?page=${currentPage}&count=${currentCount}&search=${searchQuery}`;
