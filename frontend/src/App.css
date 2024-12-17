@@ -1,0 +1,266 @@
+@import 'reset.css';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    flex: 1;
+
+
+}
+
+.header {
+    background-color: #F5F5F6;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px 0 25px;
+
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+    flex-grow: 1;
+}
+
+main {
+    background-color: #F5F5F6;
+    max-width: 800px;
+    width: 100%;
+    padding: 25px 80px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.headers,
+.line {
+    display: flex;
+    gap: 6px;
+}
+
+.headers span {
+    text-align: center;
+}
+
+.headers span,
+.line > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.line {
+    height: 26px;
+    position: relative;
+}
+
+.line span,
+.line input,
+.line textarea,
+.line select,
+.textarea-wrap {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 4px;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-weight: 400;
+    align-items: center;
+    max-width: 300px;
+    justify-content: start;
+    padding: 0 5px;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.line textarea {
+    width: 30%;
+    height: 400%;
+    right: 0;
+    z-index: 999;
+    white-space: normal;
+}
+
+
+.cell-multi {
+    display: flex;
+    gap: 2px;
+    height: 100%;
+    width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.cell-multi span,
+.cell-multi input {
+    width: 50%;
+}
+
+.line *:focus {
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    padding: 0 5px;
+}
+
+
+.icon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+.control-btns {
+    position: absolute;
+    width: 55px;
+    display: flex;
+    gap: 5px;
+    right: -60px;
+}
+
+
+.main-buttons-controller {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 70px;
+}
+
+
+.filed-list {
+    justify-content: flex-end;
+    height: 40px;
+}
+
+
+.remove-selected-btn,
+.add-vacancy-btn {
+    height: 100%;
+    width: auto;
+}
+
+.red {
+    background-color: #DB4437;
+}
+
+.green {
+    background-color: #0F9D58;
+}
+
+.yellow {
+    background-color: #F4B400;
+}
+
+.selected {
+    background: #D3D4DA;
+    color: #444444;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+    border-color: #444444;
+    box-shadow: 3px 3px 2px -2px rgba(68, 68, 68, 0.8) inset;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 20px;
+}
+
+.pagination .active {
+    color: #808080;
+    cursor: default;
+}
+
+.search {
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.search__buttons {
+    position: absolute;
+    right: 5px;
+}
+
+.search__buttons img:last-child {
+    height: 24px;
+    width: 22px;
+}
+
+.search__buttons img:first-child {
+    height: 24px;
+    width: 19px;
+    margin-right: 5px;
+}
+
+.search input {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 200px;
+    padding: 0 50px 0 5px;
+}
+
+
+.error {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.loader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: load 1s infinite;
+}
+
+
+@keyframes load {
+    0% {
+        letter-spacing: -2px;
+    }
+    50% {
+        letter-spacing: 2px;
+    }
+    100% {
+        letter-spacing: -2px;
+    }
+
+}
+
+
+
+
+
+
+
