@@ -1,14 +1,10 @@
 export const vacanciesAPI = {
-    baseURL: 'http://localhost:5000/api/vacancies',
-    //baseURL: 'vr-backand-production.up.railway.app/api/vacancies',
+    // baseURL: 'http://localhost:5000/api/vacancies',
+    baseURL: 'vr-backand-production.up.railway.app/api/vacancies',
 
     async getVacancies(currentPage, currentCount, searchQuery) {
         const url = `?page=${currentPage}&count=${currentCount}&search=${searchQuery}`;
         return await fetch(this.baseURL + url);
-    },
-
-    async getFoundedVacancies(searchValue) {
-        return await fetch(this.baseURL + `/search?query=${searchValue}`);
     },
 
     async removeVacancies(idList) {
