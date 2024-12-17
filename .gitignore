@@ -9,7 +9,7 @@ lerna-debug.log*
 
 backand/node_modules
 frontend/node_modules
-
+backand/.env
 todo.txt
 dist
 dist-ssr

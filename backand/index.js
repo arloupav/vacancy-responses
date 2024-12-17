@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 const startApp = async () => {
     await runDb();
-    app.listen(port,() => console.log(`server start on port ${port}`));
+    app.listen(port,() => console.log(`сервер запущен на порту ${port}`));
 };
 
 await startApp();
